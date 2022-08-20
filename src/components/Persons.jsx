@@ -5,7 +5,7 @@ import Person from './Person'
     <>
     {persons
        .filter(person => person.name.toLowerCase().includes(filterPerson))
-       .map(person => <Person name={person.name} number={person.number} />)
+       .map(person => <Person name={person.name} number={' ' + person.number} />)
     }
     </>
  )
